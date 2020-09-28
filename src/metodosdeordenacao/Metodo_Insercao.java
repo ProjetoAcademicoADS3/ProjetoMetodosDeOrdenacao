@@ -8,20 +8,17 @@ package metodosdeordenacao;
 /**
  * @author roger
  */
-
 public class Metodo_Insercao {
 
     public static void main(String[] args) {
         int[] vetor = {54, 35, 48, 62, 11, 8, 63, 24, 28, 41};
 
-        ordena_insercao(vetor);
-        for (int valores : vetor) {
-            System.out.print(valores + " ");
-        }
+        ordenaComInsercao(vetor);
+
     }
 
     //aqui é construído o método de inserção
-    static void ordena_insercao(int vetor[]) {
+    static void ordenaComInsercao(int vetor[]) {
         int atual;
         int i;
         int j;
@@ -34,5 +31,9 @@ public class Metodo_Insercao {
             }
             vetor[j + 1] = atual;
         }
+        for (int valores : vetor) {
+            System.out.print(valores + " ");
+        }
+        System.out.println("");
     }
 }
