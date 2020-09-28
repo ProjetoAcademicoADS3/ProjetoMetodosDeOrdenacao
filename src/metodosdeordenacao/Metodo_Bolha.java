@@ -1,6 +1,8 @@
 /*
-Método de ordenação bolha (BubbleSort)
-Compara elementos adjacentes, se o segundo for menor do que o primeiro, troca-os
+Interação sobre um conjunto de dados várias vezes
+Comparação dos dados de dois em dois
+Se o maior estiver à esquerda, troca de posição com o da sua direita
+Link --> https://www.youtube.com/watch?v=ZYO43bi0IXY
  */
 package metodosdeordenacao;
 
@@ -20,11 +22,12 @@ public class Metodo_Bolha {
             numero = random.nextInt(50) + 1;
             vetor[i] = numero;
         }
-        //Aqui o método bolha 
+        //Vetor ordenado com bolha 
         ordenaComBolha(vetor);
     }
 
-    static void ordenaComBolha(int vetor[]) {
+    //Método bolha (BubbleSort)
+    public static void ordenaComBolha(int vetor[]) {
         int i;
         int j;
         int aux;

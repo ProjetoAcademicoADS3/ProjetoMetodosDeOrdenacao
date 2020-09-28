@@ -23,7 +23,8 @@ public class Metodo_Selecao {
         ordenaComSelecao(vetor);
     }
 
-    static void ordenaComSelecao(int vetor[]) {
+    //Método Seleção (SelectionSort)
+    public static void ordenaComSelecao(int vetor[]) {
         for (int i = 0; i < vetor.length; i++) {
             int menor = i;
             for (int j = i + 1; j < vetor.length; j++) {
